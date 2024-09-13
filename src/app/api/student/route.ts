@@ -31,7 +31,7 @@ export const GET = async (request: NextRequest) => {
     filtered = filtered.filter((std) => std.program === program);
   }
   if (studentId !== null) {
-    filtered = filtered.filter((student) => student.studentId === studentId);
+    filtered = filtered.filter((std) => std.studentId === studentId);
   }
 
   //filter by student id here
